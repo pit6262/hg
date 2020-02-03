@@ -19,9 +19,9 @@
 	<header class="header">
 		<div class="header__top">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-5">
-						<ul class="ht-nav">
+				<div class="row align-items-center">
+					<div class="col-md-5 col-6">
+						<ul class="ht-nav hidden-md">
 							<li class="ht-nav__item">
 								<a href="#" class="ht-nav__link">Доставка и оплата</a>
 							</li>
@@ -32,9 +32,13 @@
 								<a href="#" class="ht-nav__link">Контакты</a>
 							</li>
 						</ul>
+						<div class="burger toggle-menu">
+							<div class="burger__icon"></div>
+							меню
+						</div>
 					</div>
-					<div class="col-lg-7 d-flex justify-content-end">
-						<ul class="ht-nav ht-nav--icons">
+					<div class="col-md-7 col-6 d-flex justify-content-end">
+						<ul class="ht-nav hidden-md">
 							<li class="ht-nav__item">
 								<a href="#" class="ht-nav__link"><span class="icon icon-desing"></span> Дизайнерам</a>
 							</li>
@@ -45,6 +49,7 @@
 								<a href="#" class="ht-nav__link"><span class="icon icon-fitting"></span> Примерка на месте</a>
 							</li>
 						</ul>
+						<div class="tel-block visible-md"><a href="tel:79260555500">+7-926-055-55-00</a></div>
 					</div>
 				</div>
 			</div>
@@ -56,7 +61,7 @@
 						<a href="#"><img src="img/logo.svg" alt=""></a>
 					</div>
 	
-					<div class="hm__info">
+					<div class="hm__info hidden-md">
 						<div class="working-time"><span class="icon icon-time"></span> Ежедневно с 9:00 до 21:00</div>
 						<div class="tel-block"><a href="tel:79260555500">+7-926-055-55-00 <span class="icon icon-caret"></span></a></div>
 					</div>
@@ -140,13 +145,16 @@
 								</div>
 	
 							</div>
-							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span></span><span class="user-nav__text">Корзина (28)</span></a></div>
+							<div class="user-nav__item">
+								<a href="#" class="user-nav__link">
+									<span class="icon icon-cart"><span class="path1"></span><span class="path2"></span></span>
+									<span class="user-nav__text"><span class="hidden-lg">Корзина</span> (28)</span>
+								</a>
+							</div>
 						</div>
 	
 					</div>
-					<div class="burger toggle-menu" style="display: none;">
-						<div class="burger__icon"></div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -167,7 +175,7 @@
 							<li class="hb-nav__item"><a href="#" class="hb-nav__link"><span class="icon icon-interior"></span> Подбор в интерьере</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-6 d-flex justify-content-end">
+					<div class="col-lg-6 d-flex justify-content-end hidden-md">
 						<div class="user-nav">
 							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-zoom"></span></a></div>
 							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
@@ -307,7 +315,7 @@
 				<div class="banner" style="background-image: url('img/banner.jpg')">
 					<div class="banner__container">
 						<h2 class="banner__title">Гарантия низкой цены</h2>
-						<p>Нашли дешевле? Сделаем цену еще ниже!</p>
+						<p>Нашли дешевле? <br class="visible-sm">Сделаем цену еще ниже!</p>
 						<div class="banner__button">
 							<a href="#" class="btn">Узнать подробнее</a>
 						</div>
@@ -318,19 +326,19 @@
 				<!-- BEGIN Services -->
 				<div class="services">
 					<div class="row no-gutters">
-						<div class="col-lg-4 services__item">
+						<div class="col-xl-4 col-md-6 col-md-4 services__item">
 							<div class="services__icon"><img src="img/services-icons1.svg" alt=""></div>
 							<div class="services__title h2">Гарантия лучшей цены</div>
 							<p>Нашли дешевле? <br>Сделаем цену еще ниже!</p>
 							<a href="#">Узнать больше</a>
 						</div>
-						<div class="col-lg-4 services__item">
+						<div class="col-xl-4 col-md-6 col-md-4 services__item">
 							<div class="services__icon"><img src="img/services-icons2.svg" alt=""></div>
 							<div class="services__title h2">Бесплатная «примерка»</div>
 							<p>Выберите лучший вариант <br>прямо на месте</p>
 							<a href="#">Узнать больше</a>
 						</div>
-						<div class="col-lg-4 services__item">
+						<div class="col-xl-4 services__item">
 							<div class="services__icon"><img src="img/services-icons3.svg" alt=""></div>
 							<div class="services__title h2">Выгодные условия дизайнерам</div>
 							<p>Привезём, найдём, сделаем скидку</p>
@@ -347,9 +355,9 @@
 							<h2 class="section__title">Новинки</h2>
 						</div>
 
-						<div class="goodss-grid">
+						<div class="goods-grid">
 							<div class="row ">
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6 ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -387,7 +395,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6 ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -425,7 +433,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6 ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -460,7 +468,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6  ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -498,7 +506,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6  hidden-xxl">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -533,7 +541,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6  hidden-xxxl">
 									<article class="goods">
 										<div class="goods__inner">
 										<div class="goods__img">
@@ -584,9 +592,9 @@
 							<h2 class="section__title">Топ продаж</h2>
 						</div>
 
-						<div class="goodss-grid">
+						<div class="goods-grid">
 							<div class="row ">
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6 ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -623,7 +631,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6 ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -662,7 +670,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6 ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -700,7 +708,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6  ">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -737,7 +745,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6  hidden-xxl">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -775,7 +783,7 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-xxxl-2 col-xxl-column-5 col-xl-3 col-sm-4 col-6  hidden-xxxl">
 									<article class="goods">
 										<div class="goods__inner">
 											<div class="goods__img">
@@ -831,13 +839,13 @@
 						</div>
 						<div class="gallery">
 							<div class="row ">
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<div class="gallery-inner gallery-inner--watch">
 										<img src="img/gallery-icon.svg" alt="">
 										<a href="#" class="btn btn--warning">Смотреть галерею</a>
 									</div>
 								</div>
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
 										<div class="zoom">
 											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
@@ -845,7 +853,7 @@
 										<div class="gallery-inner__title">Подвесная люстра Arte Lamp 20 </div>
 									</a>
 								</div>
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
 										<div class="zoom">
 											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
@@ -853,7 +861,7 @@
 										<div class="gallery-inner__title">Потолочный светильник MW-Light Ангел</div>
 									</a>
 								</div>
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
 										<div class="zoom">
 											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
@@ -861,7 +869,7 @@
 										<div class="gallery-inner__title">Подвесная люстра Arte Lamp 20 </div>
 									</a>
 								</div>
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
 										<div class="zoom">
 											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
@@ -869,7 +877,7 @@
 										<div class="gallery-inner__title">Светильник De Markt Омега</div>
 									</a>
 								</div>
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
 										<div class="zoom">
 											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
@@ -877,7 +885,7 @@
 										<div class="gallery-inner__title">Подвесная люстра Arte Lamp 20 A8057SP-5CC</div>
 									</a>
 								</div>
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
 										<div class="zoom">
 											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
@@ -885,7 +893,7 @@
 										<div class="gallery-inner__title">Накладной светильник Novotech Elina</div>
 									</a>
 								</div>
-								<div class="col-xxl-column-5">
+								<div class="col-xxl-3 col-xl-4 col-sm-6">
 									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
 										<div class="zoom">
 											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
@@ -893,22 +901,7 @@
 										<div class="gallery-inner__title">Подвесная люстра Arte Lamp 20 </div>
 									</a>
 								</div>
-								<div class="col-xxl-column-5">
-									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
-										<div class="zoom">
-											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
-										</div>
-										<div class="gallery-inner__title">Подвесная люстра Arte Lamp 20 </div>
-									</a>
-								</div>
-								<div class="col-xxl-column-5">
-									<a href="#" class="gallery-inner" style="background-image: url('img/gallery-img1.png')">
-										<div class="zoom">
-											<span class="zoom__button"><span class="icon icon-zoom-in"></span></span>
-										</div>
-										<div class="gallery-inner__title">Подвесная люстра Arte Lamp 20 </div>
-									</a>
-								</div>
+								
 								
 							</div>
 						</div>
