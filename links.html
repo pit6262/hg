@@ -28,8 +28,10 @@
 			<div class="ul-wrap">
 				<ul>
 					<li><a href="index.html">Главная </a></li>
-					<li><a href="about.html">О нас </a></li>
-					<li><a href="contacts.html">Контакты </a></li>
+					<li><a href="catalog.html">Каталог </a></li>
+					<li><a href="category.html">Категории </a></li>
+					<li><a href="gallery.html">Интерьеры</a></li>
+					<li><a href="blog.html">Блог</a></li>
 				</ul>
 				
 			</div>
@@ -37,7 +39,7 @@
 			<h2>Попап</h2>
 			<div class="ul-wrap">
 				<ul>
-					<li><a href="index.html">Обратный звонок </a></li>
+					<li><a href="#gallery" class="popup-open">Интерьеры карточка</a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,18 +48,59 @@
 
 </div>
 
-<!-- <a href="#callback" class="block__link popup-open">Попап</a>
 
-<div class="popup popup-callback ">
+
+<div class="popup popup-gallery ">
 	<div class="popup-container">
 		<div class="popup-content">
-			<div class="popup__close"></div>
-			<div class="popup__title"></div>
-			<div class="popup__text"></div>
+			<div class="popup__close"><span class="icon icon-close"></span></div>
+			<div class="popup-gallery-wrap ">
+				<div class="popup-gallery-wrap__img" style="background-image: url('img/popup-gallery.jpg')">
+					<img src="img/popup-gallery.jpg" alt="">
+				</div>
+				<div class="popup-gallery-wrap__contnet">
+					<article class="goods">
+						<div class="goods__inner">
+							<div class="goods__img">
+								<a href="#"><img src="img/card-img2.png" alt=""></a>
+								<span class="sticker-like like"><span class="icon icon-heart"></span></span>
+								
+							</div>
+							<div class="goods__head">
+								<a href="#" class="cat">Люстры</a>
+								<h5 class="goods__title"><a href="#">Детский потолочный светильник ПЛАНЕР 074500</a></h5>
+								<div class="goods__price">
+									<span class="price-value">14 480 ₽</span>
+								</div>
+							</div>
+							<div class="goods__foot">
+								<div class="goods__buy">
+									<div class="counter">
+										<button class="counter__btn counter__btn--minus js-minus" type="button">-</button>
+										<input type="text" readonly class="counter__input form-input" value="1"/>
+										<button class="counter__btn counter__btn--plus js-plus" type="button">+</button>
+									</div>
+									<a href="#" class="btn btn--warning goods__buy-btn">В корзину</a>
+									<a href="#" class="btn btn--border btn--block btn--sm goods__buy-one-click">Купить в 1 клик</a>
+								</div>
+								<ul class="goods__description">
+									<li><span>Высота, мм</span><span>220</span></li>
+									<li><span>Глубина</span><span>200</span></li>
+									<li><span>Количество ламп</span><span>2</span></li>
+									<li><span>Лампы в комплекте</span><span>Нет</span></li>
+								</ul>
+								<div class="text-center mt20">
+									<a href="#" class="text-warning font-600">Перейти в карточку товара</a>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-
+<!-- 
 <div class="popup popup-video">
 	<div class="popup-container">
 		<div class="popup-content">
