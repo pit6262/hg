@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 </head>
-<body class="loaded">
+<body class="loaded home-page">
 
 
 <!-- BEGIN BODY -->
@@ -21,7 +21,7 @@
 			<div class="container-fluid">
 				<div class="row align-items-center">
 					<div class="col-md-5 col-6">
-						<ul class="ht-nav hidden-md">
+						<ul class="ht-nav hidden-sm">
 							<li class="ht-nav__item">
 								<a href="#" class="ht-nav__link">Доставка и оплата</a>
 							</li>
@@ -38,7 +38,7 @@
 						</div>
 					</div>
 					<div class="col-md-7 col-6 d-flex justify-content-end">
-						<ul class="ht-nav hidden-md">
+						<ul class="ht-nav hidden-sm">
 							<li class="ht-nav__item">
 								<a href="#" class="ht-nav__link"><span class="icon icon-desing"></span> Дизайнерам</a>
 							</li>
@@ -49,7 +49,7 @@
 								<a href="#" class="ht-nav__link"><span class="icon icon-fitting"></span> Примерка на месте</a>
 							</li>
 						</ul>
-						<div class="tel-block visible-md"><a href="tel:79260555500">+7-926-055-55-00</a></div>
+						<div class="tel-block visible-sm"><a href="tel:79260555500">+7-926-055-55-00</a></div>
 					</div>
 				</div>
 			</div>
@@ -61,11 +61,11 @@
 						<a href="#"><img src="img/logo.svg" alt=""></a>
 					</div>
 	
-					<div class="hm__info hidden-md">
+					<div class="hm__info hidden-sm">
 						<div class="working-time"><span class="icon icon-time"></span> Ежедневно с 9:00 до 21:00</div>
 						<div class="tel-block"><a href="tel:79260555500">+7-926-055-55-00 <span class="icon icon-caret"></span></a></div>
 					</div>
-					<div class="hm__search dropdown-container">
+					<div class="hm__search  dropdown-container">
 						<form action="#" class="search">
 							<input type="text" class="search__input" placeholder="Поиск по сайту">
 							<button type="submit" class="search__button"><span class="icon icon-zoom"></span></button>
@@ -109,8 +109,9 @@
 					</div>
 					<div class="hm__user-nav ">
 						<div class="user-nav">
-							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
-							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
+							<div class="user-nav__item visible-md"><a href="#" class="user-nav__link"><span class="icon icon-zoom"></span></a></div>
+							<div class="user-nav__item hidden-xs"><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
+							<div class="user-nav__item hidden-xs"><a href="#" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
 							<div class="user-nav__item dropdown-container">
 								<a href="#" class="user-nav__link dropdown-button"><span class="icon icon-login"></span></a>
 							<!-- 	<div class="dropdown-block ">
@@ -161,22 +162,98 @@
 		<div class="header__bottom header-sticky hb">
 			<div class="hb__left">
 				<div class="catalog-container ">
-					<a href="#up" class="catalog-container__button anchor">
+					<a href="#" class="catalog-container__button toggle-main-menu ">
 						<div class="burger__icon"></div>
 						Каталог продукции
 					</a>
-				
+					<div class="main-menu">
+						<ul class="main-menu-list">
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-chandeliers"></span> Люстры</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-sconces"></span> Бра</a>
+							</li>
+							<li class="main-menu-list__item mm-dropdowm">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-fixtures"></span> Светильники</a>
+								<ul class="main-menu-dropdown">
+									
+									<li><a href="#">Потолочные светильники</a></li>
+									<li><a href="#">Бра</a></li>
+									<li><a href="#">Точечные светильники</a></li>
+									<li><a href="#">Споты</a></li>
+									<li><a href="#">Потолочные светильники</a></li>
+									<li><a href="#">Бра</a></li>
+									<li><a href="#">Точечные светильники</a></li>
+									<li><a href="#">Споты</a></li>
+								
+								</ul>
+							</li>
+							<li class="main-menu-list__item mm-dropdowm">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-desk-lamp"></span> Настольные лампы</a>
+								<ul class="main-menu-dropdown">
+									
+									<li><a href="#">Потолочные светильники</a></li>
+									<li><a href="#">Бра</a></li>
+									<li><a href="#">Точечные светильники</a></li>
+									<li><a href="#">Споты</a></li>
+									<li><a href="#">Настольные лампы</a></li>
+									<li><a href="#">Карданные светильники</a></li>
+									<li><a href="#">Торшеры</a></li>
+									<li><a href="#">Детские светильники</a></li>
+									<li><a href="#">Светильники в ванную комнату</a></li>
+									
+								</ul>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-spots"></span> Споты</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-floor-lamps"></span> Торшеры</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-street-lighting"></span> Уличное освещение</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-track-systems"></span> Трековые системы</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-office-lighting"></span> Офисное освещение</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-light-bulbs"></span> Лампочки</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-led-lights"></span> Светодиодная подсветка</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-accessories"></span> Комплектующие</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-sockets"></span> Выключатели и розетки</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-fireplaces"></span> Камины</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-electrician"></span> Электрика</a>
+							</li>
+							<li class="main-menu-list__item">
+								<a href="#" class="main-menu-list__link"><span class="icon icon-plus-circle"></span> Другое</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="hb__right">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-8 col-md-9">
 						<ul class="hb-nav">
 							<li class="hb-nav__item"><a href="#" class="hb-nav__link"><span class="icon icon-procent"></span> Акции и скидки</a></li>
 							<li class="hb-nav__item"><a href="#" class="hb-nav__link"><span class="icon icon-interior"></span> Подбор в интерьере</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-6 d-flex justify-content-end hidden-md">
+					<div class="col-lg-4 col-md-3 d-flex justify-content-end hidden-md">
 						<div class="user-nav">
 							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-zoom"></span></a></div>
 							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
@@ -929,7 +1006,7 @@
 				<footer class="footer">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-lg-3 footer__item">
+							<div class="col-md-3 col-sm-6 order-md-0 order-sm-1 order-2 footer__item">
 								<div class="footer__logo logo">
 									<a href="#">
 										<img src="img/logo-white.svg" class="logo-white"  alt="">
@@ -938,24 +1015,24 @@
 								</div>
 								<p class="size-sm mb25">© HG electrics 2014-2019</p>
 				
-								<p class="size-sm">г. Реутов, Северный проезд, д.1 <br> Павильон 8-11Б <br> Пн-Вс 9.00 - 21.00</p>
+								<p class="size-sm mb0">г. Реутов, Северный проезд, д.1 <br class="hidden-sm"> Павильон 8-11Б <br> Пн-Вс 9.00 - 21.00</p>
 								
 							</div>
-							<div class="col-lg-3 footer__item">
+							<div class="col-md-3 col-sm-6 order-md-0 order-sm-2 order-1 footer__item">
 								<div class="social">
 									<a href="#" class="social__link"><span class="icon icon-instagram"></span></a>
 								</div>
 								<p class="size-sm mb10 text-gray">МСК с 9:00 до 21:00</p>
 								<p class="tel-list mb5">
-									<a class="link-td-no" href="tel:79250777007">+7 925 077-70-07</a> <br>
+									<a class="link-td-no" href="tel:79250777007">+7 925 077-70-07</a> <br class="hidden-sm">
 									<a class="link-td-no" href="tel:79260555500">+7 926-055-55-00</a>
 								</p>
 								<p class="size-sm mb15"><a href="#" class="link-td-no">Заказать звонок</a></p>
-								<p class="email-list">
+								<p class="email-list mb0">
 									<a class="link-td-no" href="mailto:info@hg-light.ru">info@hg-light.ru</a>
 								</p>
 							</div>
-							<div class="col-lg-3 footer__item">
+							<div class="col-md-3 col-6 footer__item">
 								<div class="footer__title">Каталог </div>
 								<ul class="footer__nav">
 									<li><a href="#">Освещение</a></li>
@@ -965,7 +1042,7 @@
 									<li><a href="#">Зеркала</a></li>
 								</ul>
 							</div>
-							<div class="col-lg-3 footer__item">
+							<div class="col-md-3 col-6 footer__item">
 								<div class="footer__title">Покупателям </div>
 								<ul class="footer__nav">
 									<li><a href="#">Контакты</a></li>

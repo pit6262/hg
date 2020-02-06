@@ -19,6 +19,15 @@ $(function(){
 		return false;
 	});
 
+	$(".mm-dropdowm").on('click',function(){
+		var thisBlock = $(this)
+		
+		$(".mm-dropdowm").not(thisBlock).removeClass('is-open')
+		$(this).toggleClass("is-open");
+
+		return false;
+	});
+
 	// smooth Scroll
 	function smoothScroll(){
 		$('a.anchor').bind('click.smoothscroll',function () {
@@ -49,22 +58,7 @@ $(function(){
 	}
 	counter();
 
-	
-	// Fixed Header
-	function fixedHeader(){
-		$(".header").removeClass("fixed");
-		$(window).on('scroll load', function(){
 
-			if ($(this).scrollTop() > 145) {
-				$(".header").addClass("fixed");
-			} else {
-				 $(".header").removeClass("fixed");
-			};
-
-			
-		});
-	}
-	fixedHeader();
 
 
 	// Dropdown
