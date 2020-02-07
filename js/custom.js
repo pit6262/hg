@@ -18,6 +18,11 @@ $(function(){
 		$(this).parents('.catalog-container').find('.main-menu').slideToggle();
 		return false;
 	});
+	$(".toggle-add-reviews").on('click',function(){
+		$('.add-review').slideToggle(200)
+		return false;
+	});
+
 
 	$(".mm-dropdowm").on('click',function(){
 		var thisBlock = $(this)
@@ -196,6 +201,18 @@ $(function(){
 		return false
 	});
 
+	/* Accordion */
+	/* ---------------------------------------------- */
+	$('.accordion-item').on('click', function(){
+		var el = $(this);
+		var elNext = $(this).next();
+		$('.accordion-item').not(el).removeClass('is-active')
+		$('.accordion-body').not(elNext).slideUp(200)
+		el.next('.accordion-body').slideToggle(200);
+		el.toggleClass('is-active');
+		return false;
+	});
+
 
 	/* Popup */
 	/* ---------------------------------------------- */
@@ -279,6 +296,8 @@ $(function(){
 		}
 	});
 
+
+
 	/* Plugins */
 	/* ---------------------------------------------- */
 
@@ -313,7 +332,7 @@ $(function(){
 		$("#range" ).find('.ui-slider-handle').eq(1).addClass('right');
 	}
 
-	/* Styler */
+	// Styler 
 	if($('.styler').length){
 		$('.styler').styler({
 			singleSelectzIndex: '5',
@@ -321,7 +340,99 @@ $(function(){
 		});
 	};
 
+	// MASKS 
+	$('input.tel').inputmask('+7(999) 999 9999',{
+		clearIncomplete: true,
+		clearMaskOnLostFocus: true,
+		showMaskOnHover: false,
+
+	});
+
+
+	// Slick Slider  
+	if($('.slider').length){
+		$('.slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			
+			asNavFor: '.slider-nav',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						centerPadding: '20%',
+						centerMode: true,
+						dots: true,
+						fade: false,
+					}
+				}
+			]
+		});
+		$('.slider-nav').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			asNavFor: '.slider',
+			arrows: false,
+			swipe: false,
+
+			focusOnSelect: true,
+			vertical: true,
+			verticalSwiping: true,
+			verticalScrolling: true,
+			adaptiveHeight: true,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						vertical: false,
+						verticalScrolling: false,
+						verticalSwiping: false,
+						slidesToShow: 5,
+					}
+				}
+			]
+		});
+	}
 
 	
 
 });
+
+if($('#map').length){
+    function initMap() {
+        var myLatLng = {lat: 47.956413, lng: 33.407902};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+			center: myLatLng,
+			zoom: 18,
+			disableDefaultUI: true,
+	       
+        });
+
+		var widthWindow = $(window).width();
+		// var contentString = '';
+
+
+		// var infowindow = new google.maps.InfoWindow({
+		// 	content: contentString,
+			
+		// }); 
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: ' ',
+       	  icon: 'img/pin.svg',
+
+       });
+
+		infowindow.open(map, marker);
+
+    }
+
+    
+
+};
