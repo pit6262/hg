@@ -3897,6 +3897,10 @@ label {
   /* Header */
   .hm__logo {
     width: 3rem; }
+  .user-nav {
+    position: relative; }
+    .user-nav__item {
+      position: static !important; }
   /* Main */
   .banner-slider__item {
     padding: 3rem 1rem 5rem;
