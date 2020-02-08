@@ -3450,6 +3450,8 @@ label {
     display: none !important; }
   .mb-lg-40 {
     margin-bottom: 4rem; }
+  .mb-lg-20 {
+    margin-bottom: 2rem; }
   .container, .container-fluid {
     padding-left: 2rem !important;
     padding-right: 2rem !important; }
@@ -3785,6 +3787,10 @@ label {
     margin-top: 3rem; }
   .content__header {
     padding-top: 2rem; }
+  .content__body {
+    padding-bottom: 4rem; }
+  .services-block__img .text {
+    font-size: 4.5rem; }
   /* Sidebar */
   .filter-mobile {
     padding-left: 0;
@@ -3822,6 +3828,9 @@ label {
     .promocode__button {
       display: inline-block;
       vertical-align: middle; }
+  /* Contacts */
+  .contacts-block {
+    margin-bottom: 2rem; }
   /*  UI */
   .nav-tab {
     margin: 0 -.7rem;
@@ -3872,6 +3881,8 @@ label {
     display: flex;
     padding-left: 1rem;
     padding-right: 1rem; }
+  .form-input, .jq-selectbox {
+    max-width: none; }
   .radio-block .radio__text {
     padding: 1rem;
     font-size: 1.2rem; }
