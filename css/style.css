@@ -1551,16 +1551,18 @@ img {
   margin-top: 2rem;
   margin-bottom: 0; }
 
-.category-links a {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 1.6rem 2rem 0;
-  text-decoration: none;
-  font-weight: 600; }
-  .category-links a:last-child {
-    margin-right: 0; }
-  .category-links a:hover, .category-links a.is-active {
-    color: #FAB800; }
+.category-links {
+  margin-bottom: 1rem; }
+  .category-links a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1.6rem 1rem 0;
+    text-decoration: none;
+    font-weight: 600; }
+    .category-links a:last-child {
+      margin-right: 0; }
+    .category-links a:hover, .category-links a.is-active {
+      color: #FAB800; }
 
 /* Gallery inner */
 .section .gallery {
