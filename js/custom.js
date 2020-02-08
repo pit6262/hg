@@ -483,28 +483,65 @@ $(function(){
 		});
 	}
 
-	if($('#map').length){
-	    function initMap() {
-	        var myLatLng = {lat: 47.956413, lng: 33.407902};
+	// if($('#map').length){
+	// 	function initMap() {
+	// 		var myLatLng = {lat: 47.956413, lng: 33.407902};
 
-	        var map = new google.maps.Map(document.getElementById("map"), {
-				center: myLatLng,
-				zoom: 18,
-				disableDefaultUI: true,
-		       
-	        });
+	// 		var map = new google.maps.Map(document.getElementById("map"), {
+	// 			center: myLatLng,
+	// 			zoom: 18,
+	// 			disableDefaultUI: true,
 
-	        var marker = new google.maps.Marker({
-	          map: map,
-	          position: myLatLng,
-	          title: ' ',
-	       	  icon: 'img/pin.svg',
+	// 		});
 
-	       });
+	// 		var marker = new google.maps.Marker({
+	// 			map: map,
+	// 			position: myLatLng,
+	// 			title: ' ',
+	// 			icon: 'img/pin.svg',
 
-	    }
+	// 		});
 
-	    initMap();
-	};
+	// 	}
+
+	// 	initMap();
+	// };
 
 });
+
+
+
+function getYaMap(){
+	if($('#map').length){
+	ymaps.ready(init); // карта соберется после загрузки скрипта и элементов
+		var myMap1; // заглобалим переменную карты чтобы можно было ею вертеть из любого места
+		function init () { // функция - собиралка карты и фигни
+			var myMap = new ymaps.Map("map", {
+				center: [55.707555, 37.651314], 
+				zoom: 15,
+				controls: ['geolocationControl', 'zoomControl']
+			});
+			myMap.behaviors.disable('scrollZoom', 'drag'); 
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			// hintContent: 'Собственный значок метки',
+			// balloonContent: 'Это красивая метка'
+			}, {
+			// Опции.
+			// Необходимо указать данный тип макета.
+			iconLayout: 'default#image',
+			// Своё изображение иконки метки.
+			iconImageHref: 'img/pin.svg',
+			// Размеры метки.
+			iconImageSize: [45, 55],
+			// Смещение левого верхнего угла иконки относительно
+			// её "ножки" (точки привязки).
+
+			})
+
+			/* Добавляем метки на карту */
+			myMap.geoObjects.add(myPlacemark);
+		}
+
+	}
+}
