@@ -303,6 +303,38 @@
 			</div>
 		</div>
 	</header>
+	
+	<div class="mobile-menu">
+		<div class="mobile-menu__head">
+			<div class="mobile-menu__close burger">
+				<span class="burger__icon open"><span></span></span>Свернуть
+			</div>
+			<div class="mobile-menu__icons">
+				<div class="user-nav">
+					<div class="user-nav__item "><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
+					<div class="user-nav__item "><a href="#" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-menu__body">
+			<ul class="mobile-menu__list">
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Возврат</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+	
+			<ul class="mobile-menu__list">
+				<li><a href="#">Дизайнерам</a></li>
+				<li><a href="#">Примерка на месте</a></li>
+				<li><a href="#">Гарантия низких цен</a></li>
+			</ul>
+	
+			<ul class="mobile-menu__list">
+				<li><a href="#">Блог</a></li>
+				
+			</ul>
+		</div>
+	</div>
 	<!-- HEADER EOF   -->
 
 	<!-- BEGIN MAIN -->
@@ -518,7 +550,7 @@
 								<a href="#" class="tags__btn">На четыре и более ламп</a>
 							</div>
 
-							<div class="row">
+							<div class="row hidden-md">
 								<div class="col-md-7 sorting__item">
 									
 									<div class="sorting__title">Упорядочить по:</div>
@@ -538,6 +570,207 @@
 										<a href="#">50</a>
 									</div>
 									
+								</div>
+							</div>
+
+							<div class="visible-md filter-mobile">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="filter-mobile__container">
+											<a href="#" class="filter-mobile__button">Фильтр товаров (2) <span class="icon icon-filter"></span></a>
+											<div class="filter-mobile__dropdown">
+												<div class="filter-block is-open">
+													<div class="filter-block__head">
+														<div class="filter-block__title">Цена</div>
+													</div>
+													<div class="filter-block__body" style="display: block;">
+														<div class="range">
+															
+															<div id="range2" class="range-scroll"></div>
+															<div class="range__row">
+																<div class="range__item">
+																	<span><span id="rangefrom2" ></span> ₽</span>
+																</div>
+																<div class="range__item">
+																	<span><span id="rangeto2" ></span> ₽</span>
+																</div>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+
+												<div class="filter-block">
+													<div class="filter-block__head">
+														<div class="filter-block__title">Тип крепления <span class="filter-block__number"></span></div>
+													</div>
+													<div class="filter-block__body">
+														<ul class="filter-block__list">
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Ambrella <span class="fbl-number">(8)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Arte Lamp <span class="fbl-number">(424)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Artemide <span class="fbl-number">(62)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Arti Lampadari <span class="fbl-number">(21)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Bezhko <span class="fbl-number">(11)</span></span>
+																</label>
+															</li>
+															<li class="i-hidden">
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Artemide <span class="fbl-number">(62)</span></span>
+																</label>
+															</li>
+															<li class="i-hidden">
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Arti Lampadari <span class="fbl-number">(21)</span></span>
+																</label>
+															</li>
+															<li class="i-hidden">
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Bezhko <span class="fbl-number">(11)</span></span>
+																</label>
+															</li>
+														</ul>
+														<div class="filter-block__link">
+															<a href="#" class="filter-link" data-title="Показать все">Показать все</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="filter-block">
+													<div class="filter-block__head">
+														<div class="filter-block__title">Бренд <span class="filter-block__number"></span></div>
+													</div>
+													<div class="filter-block__body">
+														<ul class="filter-block__list">
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Ambrella <span class="fbl-number">(8)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Arte Lamp <span class="fbl-number">(424)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Artemide <span class="fbl-number">(62)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Arti Lampadari <span class="fbl-number">(21)</span></span>
+																</label>
+															</li>
+															<li>
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Bezhko <span class="fbl-number">(11)</span></span>
+																</label>
+															</li>
+															<li class="i-hidden">
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Artemide <span class="fbl-number">(62)</span></span>
+																</label>
+															</li>
+															<li class="i-hidden">
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Arti Lampadari <span class="fbl-number">(21)</span></span>
+																</label>
+															</li>
+															<li class="i-hidden">
+																<label class="checkbox checkbox--white">
+																	<input type="checkbox">
+																	<span class="checkbox__figure"></span>
+																	<span class="checkbox__text">Bezhko <span class="fbl-number">(11)</span></span>
+																</label>
+															</li>
+														</ul>
+														<div class="filter-block__link">
+															<a href="#" class="filter-link" data-title="Показать все">Показать все</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="filter-block is-open">
+													<div class="filter-block__head">
+														<div class="filter-block__title">Попандер и поле </div>
+													</div>
+													<div class="filter-block__body" style="display: block;">
+														<div class="mb20">
+															<input type="text" class="form-input form-input--white form-input--block" placeholder="Введите текст">
+														</div>
+														<div>
+															<select class="styler styler--white styler--block" >
+																<option >Выберите</option>
+																<option value="">Первый пункт</option>
+																<option value="">Второй пункт</option>
+																<option value="">Третий пункт</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="filter-mobile__container">
+											<a href="#" class="filter-mobile__button">Сортировка <span class="icon icon-caret"></span></a>
+											<div class="filter-mobile__dropdown">
+												<div class="sorting-links">
+													<div class="sorting-links__item"><a href="#">Цене</a></div>
+													<div class="sorting-links__item"><a href="#">Рейтингу</a></div>
+													<div class="sorting-links__item"><a href="#" class="is-active">Новизне</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1192,6 +1425,24 @@
 						</article>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="popup popup-default ">
+		<div class="popup-container">
+			<div class="popup-content">
+				<div class="popup__close"><span class="icon icon-close"></span></div>
+				<div class="popup__head">
+					<h2 class="popup__title">Заголовок окна</h2>
+					<p>Текстовое описание для окна, тут будет описание информация текст текст</p>
+				</div>
+				<form action="#">
+					<div class="form-field">
+						<input type="tel" class="form-input form-input--block tel" placeholder="Ваш номер телефона">
+					</div>
+					<input type="submit" class="btn btn--warning btn--block" value="Оставить заявку">
+				</form>
 			</div>
 		</div>
 	</div>

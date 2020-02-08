@@ -122,23 +122,32 @@
 .slick-dots {
     list-style:  none;
     text-align: center;
+
 }
 .slick-dots li {
     display: inline-block;
     vertical-align: middle;
+    margin:  0 .5rem;
 }
 .slick-dots li:first-child:last-child {
     display: none;
 }
 
+
 .slick-dots button {
     display: block;
-
+    height: 3px;
+    width: 20px;
+    background: #f3f3f3;
+    text-indent:  -9999px;
+    font-size: 0;
     overflow: hidden;
     padding: 0;
-    background: transparent;
     border: none;
-   
+}
+
+.slick-dots li.slick-active button{
+    background: #000;
 }
 
 .slick-arrow {

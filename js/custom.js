@@ -8,10 +8,7 @@ $(function(){
 	/* Burger */
 	/* ---------------------------------------------- */
 
-	$(".toggle-menu").on('click',function(){
-		$(this).find(".burger__icon").toggleClass("open");
-		return false;
-	});
+	
 
 	$(".toggle-main-menu").on('click',function(){
 		$(this).find(".burger__icon").toggleClass("open");
@@ -32,6 +29,25 @@ $(function(){
 
 		return false;
 	});
+
+	// Open Mobile Menu
+	function mobileMenu(){
+		$(".toggle-menu").on('click',function(){
+			
+			$('.mobile-menu').addClass('is-open')
+			$('body').addClass('lock')
+			return false;
+		});
+
+		$(".mobile-menu__close").on('click',function(){
+			
+			$('.mobile-menu').removeClass('is-open')
+			$('body').removeClass('lock')
+			return false;
+		});
+	}
+	mobileMenu()
+
 
 	// smooth Scroll
 	function smoothScroll(){
@@ -132,6 +148,25 @@ $(function(){
 
 	}
 	filterAccordion();
+
+	//  Filter Mobile
+	function FilterMobile() {
+		$('.filter-mobile__button').on('click', function(){
+			var thisContainer = $(this)
+			// $('.filter-mobile__button').not($(this)).parents('.filter-mobile__container').find('.filter-mobile__dropdown').slideUp(200)
+			$(this).parents('.filter-mobile__container').find('.filter-mobile__dropdown').slideToggle(200)
+
+			if($(this).parents('.filter-mobile').find('.styler').length>0) {
+				$(this).parents('.filter-mobile').find('.styler').trigger('refresh')
+
+			}
+			return false;
+		});
+
+	}
+	FilterMobile();
+
+	
 
 	//  Filter how many active elements
 	function filterActiveElements() {
@@ -332,6 +367,35 @@ $(function(){
 		$("#range" ).find('.ui-slider-handle').eq(1).addClass('right');
 	}
 
+	if($("#range2" ).length>0){
+		$("#range2" ).slider({
+			range: true,
+			min: 100,
+			max: 93456,
+			values: [19124, 72390],
+			slide: function( event, ui ){
+				$('#rangefrom2').text($( "#range2" ).slider( "option","min").toLocaleString());
+				$('#rangeto2').text($( "#range2" ).slider( "option","max").toLocaleString());
+				$(this).find('.ui-slider-handle').eq(0).html('<span>'+ui.values[0].toLocaleString() +'</span>');
+				$(this).find('.ui-slider-handle').eq(1).html('<span>'+ui.values[1].toLocaleString() +'</span>');
+			},
+			change: function( event, ui ){
+				if(ui.values[0]!=$( "#range2" ).slider( "option","min") || ui.values[1]!=$( "#range2" ).slider( "option","max")){
+					$('#range2').addClass('act');
+				}else{
+					$('#range2').removeClass('act');
+				}
+			}
+		});
+		$('#rangefrom2').text($( "#range2" ).slider( "option","min").toLocaleString());
+		$('#rangeto2').text($( "#range2" ).slider( "option","max").toLocaleString());
+		$("#range2" ).find('.ui-slider-handle').eq(0).html('<span>'+$( "#range2" ).slider( "values", 0).toLocaleString() +'</span>');
+		$("#range2" ).find('.ui-slider-handle').eq(1).html('<span>'+$( "#range2" ).slider( "values", 1).toLocaleString() +'</span>');
+		
+		$("#range2" ).find('.ui-slider-handle').eq(0).addClass('left');
+		$("#range2" ).find('.ui-slider-handle').eq(1).addClass('right');
+	}
+
 	// Styler 
 	if($('.styler').length){
 		$('.styler').styler({
@@ -348,8 +412,20 @@ $(function(){
 
 	});
 
-
 	// Slick Slider  
+	if($('.banner-slider').length){
+		$('.banner-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			dots: true,
+			
+		});
+	}
+
+
+	
 	if($('.slider').length){
 		$('.slider').slick({
 			slidesToShow: 1,
@@ -396,43 +472,28 @@ $(function(){
 		});
 	}
 
-	
+	if($('#map').length){
+	    function initMap() {
+	        var myLatLng = {lat: 47.956413, lng: 33.407902};
+
+	        var map = new google.maps.Map(document.getElementById("map"), {
+				center: myLatLng,
+				zoom: 18,
+				disableDefaultUI: true,
+		       
+	        });
+
+	        var marker = new google.maps.Marker({
+	          map: map,
+	          position: myLatLng,
+	          title: ' ',
+	       	  icon: 'img/pin.svg',
+
+	       });
+
+	    }
+
+	    initMap();
+	};
 
 });
-
-if($('#map').length){
-    function initMap() {
-        var myLatLng = {lat: 47.956413, lng: 33.407902};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-			center: myLatLng,
-			zoom: 18,
-			disableDefaultUI: true,
-	       
-        });
-
-		var widthWindow = $(window).width();
-		// var contentString = '';
-
-
-		// var infowindow = new google.maps.InfoWindow({
-		// 	content: contentString,
-			
-		// }); 
-
-        // Create a marker and set its position.
-        var marker = new google.maps.Marker({
-          map: map,
-          position: myLatLng,
-          title: ' ',
-       	  icon: 'img/pin.svg',
-
-       });
-
-		infowindow.open(map, marker);
-
-    }
-
-    
-
-};
