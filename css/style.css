@@ -975,7 +975,8 @@ img {
     font-size: 4rem;
     font-weight: 400; }
   .banner__container {
-    position: relative; }
+    position: relative;
+    z-index: 2; }
   .banner__button {
     margin-top: 4.5rem; }
 
@@ -3555,7 +3556,8 @@ label {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
         -ms-flex: 1;
-        flex: 1; }
+        flex: 1;
+        margin: 0; }
         .card-slider .slick-dots li button {
           display: block;
           text-indent: -99999px;
