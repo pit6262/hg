@@ -12,7 +12,7 @@ $(function(){
 
 	$(".toggle-main-menu").on('click',function(){
 		$(this).find(".burger__icon").toggleClass("open");
-		$(this).parents('.catalog-container').find('.main-menu').slideToggle();
+		$(this).parents('.catalog-container').find('.main-menu').slideToggle(200);
 		return false;
 	});
 	$(".toggle-add-reviews").on('click',function(){
@@ -20,12 +20,28 @@ $(function(){
 		return false;
 	});
 
+	$(".search-open").on('click',function(){
 
-	$(".mm-dropdowm").on('click',function(){
-		var thisBlock = $(this)
+		$('.hm__search').addClass('is-open')
+		setTimeout(function(){
+		  $('.hm__search .search__input').focus();
+		}, 300);
 		
-		$(".mm-dropdowm").not(thisBlock).removeClass('is-open')
-		$(this).toggleClass("is-open");
+		return false;
+	});
+
+
+	$(".search-close").on('click',function(){
+		$('.hm__search').removeClass('is-open')
+		return false;
+	});
+
+
+	$(".mm-dropdowm .main-menu-list__link").on('click',function(){
+		var thisBlock = $(this).parent();
+		
+		$(".mm-dropdowm").not(thisBlock).removeClass('is-open').find('.main-menu-dropdown').hide();
+		$(this).parent().toggleClass("is-open").find('.main-menu-dropdown').fadeToggle(200);
 
 		return false;
 	});
@@ -483,29 +499,6 @@ $(function(){
 		});
 	}
 
-	// if($('#map').length){
-	// 	function initMap() {
-	// 		var myLatLng = {lat: 47.956413, lng: 33.407902};
-
-	// 		var map = new google.maps.Map(document.getElementById("map"), {
-	// 			center: myLatLng,
-	// 			zoom: 18,
-	// 			disableDefaultUI: true,
-
-	// 		});
-
-	// 		var marker = new google.maps.Marker({
-	// 			map: map,
-	// 			position: myLatLng,
-	// 			title: ' ',
-	// 			icon: 'img/pin.svg',
-
-	// 		});
-
-	// 	}
-
-	// 	initMap();
-	// };
 
 });
 

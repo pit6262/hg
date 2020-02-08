@@ -67,9 +67,11 @@
 						<div class="tel-block"><a href="tel:79260555500">+7-926-055-55-00 <span class="icon icon-caret"></span></a></div>
 					</div>
 					<div class="hm__search  dropdown-container">
+						<div class="hm__search-close search-close visible-md"><span class="icon icon-close"></span></div>
 						<form action="#" class="search">
 							<input type="text" class="search__input dropdown-button" placeholder="Поиск по сайту">
 							<button type="submit" class="search__button"><span class="icon icon-zoom"></span></button>
+	
 						</form>
 	
 						<div class="dropdown-block dropdown-block--fw">
@@ -94,7 +96,6 @@
 								</li>
 							</ul>
 	
-							
 							<div class="ds-title">Категории</div>
 							<ul class="ds-category-list">
 								<li><a href="#">Люстры</a></li>
@@ -110,12 +111,12 @@
 					</div>
 					<div class="hm__user-nav ">
 						<div class="user-nav">
-							<div class="user-nav__item visible-md"><a href="#" class="user-nav__link"><span class="icon icon-zoom"></span></a></div>
+							<div class="user-nav__item  visible-md"><a href="#" class="user-nav__link search-open"><span class="icon icon-zoom"></span></a></div>
 							<div class="user-nav__item hidden-xs"><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
 							<div class="user-nav__item hidden-xs"><a href="#" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
 							<div class="user-nav__item dropdown-container">
 								<a href="#" class="user-nav__link dropdown-button"><span class="icon icon-login"></span></a>
-								<!-- <div class="dropdown-block ">
+								<div class="dropdown-block ">
 									<div class="dropdown-block__title">Войти в аккаунт</div>
 									<form action="#">
 										<div class="form-field">
@@ -134,8 +135,8 @@
 											<a href="#" class="btn btn--block btn--border btn--sm">Регистрация</a>
 										</div>
 									</form>
-								</div> -->
-								<div class="dropdown-block ">
+								</div>
+								<!-- <div class="dropdown-block ">
 									<div class="dropdown-block__title">Мой аккаунт</div>
 									<ul class="ds-user-nav">
 										<li><a href="#">История заказов</a></li>
@@ -145,10 +146,10 @@
 										<a href="#" class="ds-link link">Выход</a>
 									</div>
 								</div>
-	
+	 -->
 							</div>
 							<div class="user-nav__item">
-								<a href="#" class="user-nav__link">
+								<a href="#" class="user-nav__link is-active">
 									<span class="icon icon-cart"><span class="path1"></span><span class="path2"></span></span>
 									<span class="user-nav__text"><span class="hidden-lg">Корзина</span> (28)</span>
 								</a>
@@ -164,8 +165,9 @@
 			<div class="hb__left">
 				<div class="catalog-container ">
 					<a href="#" class="catalog-container__button toggle-main-menu ">
-						<div class="burger__icon"></div>
+						<div class="burger__icon hidden-md"></div>
 						Каталог продукции
+						<span class="icon icon-caret visible-md"></span>
 					</a>
 					<div class="main-menu">
 						<ul class="main-menu-list">
