@@ -2092,6 +2092,9 @@ img {
     padding-top: 1.5rem; }
 
 /* Compare */
+.compare-wrap {
+  padding-top: 1rem; }
+
 .compare-sorting .btn {
   margin: 0 1.6rem 1rem 0; }
 
@@ -2099,9 +2102,8 @@ img {
   overflow-y: hidden;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  max-width: 100%; }
-  .compare-scrollbar.scroll {
-    padding: 2rem 0; }
+  max-width: 100%;
+  padding: 2rem 0; }
 
 .compare-table td {
   padding: 1rem 1.5rem;
@@ -2157,7 +2159,7 @@ img {
   padding: 0 1.4rem; }
 
 .clear-wrap {
-  padding: 2rem 0; }
+  padding: 1.6rem 0; }
 
 .clear-link {
   font-weight: 600;
