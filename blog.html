@@ -64,7 +64,34 @@
 	
 					<div class="hm__info hidden-sm">
 						<div class="working-time"><span class="icon icon-time"></span> Ежедневно с 9:00 до 21:00</div>
-						<div class="tel-block"><a href="tel:79260555500">+7-926-055-55-00 <span class="icon icon-caret"></span></a></div>
+						<div class="tel-block dropdown-container">
+							<a href="tel:79260555500 " class="dropdown-button">+7-926-055-55-00 <span class="icon icon-caret"></span></a>
+							<div class="dropdown-block ">
+								<div class="dropdown-block__title">Заказать обратный звонок</div>
+								<form action="#">
+									<div class="form-field">
+										<input type="text" class="form-input" placeholder="Ваше имя">
+									</div>
+									<div class="form-field">
+										<input type="tel" class="form-input tel" placeholder="Ваш телефон">
+									</div>
+									<div class="form-button form-field">
+										<input type="submit" class="btn btn--block btn--warning" value="Отправить">
+									</div>
+									
+									<div class="dropdown-block__social social social--sm">
+										<a href="#" class="social__link">
+											<span class="icon icon-whatsapp"></span>
+											<span class="social__text">WhatsApp</span>
+										</a>
+										<a href="#" class="social__link">
+											<span class="icon icon-telegram"></span>
+											<span class="social__text">Telegram</span>
+										</a>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 					<div class="hm__search  dropdown-container">
 						<div class="hm__search-close search-close visible-md"><span class="icon icon-close"></span></div>
@@ -111,11 +138,19 @@
 					</div>
 					<div class="hm__user-nav ">
 						<div class="user-nav">
-							<div class="user-nav__item  visible-md"><a href="#" class="user-nav__link search-open"><span class="icon icon-zoom"></span></a></div>
-							<div class="user-nav__item hidden-xs"><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
-							<div class="user-nav__item hidden-xs"><a href="#" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
+							<div class="user-nav__item  visible-md">
+								<a href="#" title="Поиск" class="user-nav__link search-open"><span class="icon icon-zoom"></span></a>
+							</div>
+							<div class="user-nav__item hidden-xs">
+								<a href="#" title="Избранное" class="user-nav__link is-active">
+									<span class="icon icon-favorites"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+								</a>
+							</div>
+							<div class="user-nav__item hidden-xs">
+								<a href="#" title="Сравнение товаров" class="user-nav__link"><span class="icon icon-compare"></span></a>
+							</div>
 							<div class="user-nav__item dropdown-container">
-								<a href="#" class="user-nav__link dropdown-button"><span class="icon icon-login"></span></a>
+								<a href="#" title="Личный кабинет" class="user-nav__link dropdown-button"><span class="icon icon-login"></span></a>
 								<div class="dropdown-block ">
 									<div class="dropdown-block__title">Войти в аккаунт</div>
 									<form action="#">
@@ -146,10 +181,10 @@
 										<a href="#" class="ds-link link">Выход</a>
 									</div>
 								</div>
-	 -->
+								 -->
 							</div>
 							<div class="user-nav__item">
-								<a href="#" class="user-nav__link is-active">
+								<a href="#" title="Корзина" class="user-nav__link is-active">
 									<span class="icon icon-cart"><span class="path1"></span><span class="path2"></span></span>
 									<span class="user-nav__text"><span class="hidden-lg">Корзина</span> (28)</span>
 								</a>
@@ -161,24 +196,36 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__bottom header-sticky hb">
+		<div class="header__bottom  hb">
 			<div class="hb__left">
 				<div class="catalog-container ">
 					<a href="#" class="catalog-container__button toggle-main-menu ">
-						<div class="burger__icon hidden-md"></div>
+						<div class="burger__icon hidden-sm"></div>
 						Каталог продукции
-						<span class="icon icon-caret visible-md"></span>
+						<span class="icon icon-caret visible-sm"></span>
 					</a>
 					<div class="main-menu">
 						<ul class="main-menu-list">
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-chandeliers"></span> Люстры</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/chandeliers.svg" alt="" class="icon">
+									Люстры
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-sconces"></span> Бра</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/sconces.svg" alt="" class="icon">
+									Бра
+								</a>
 							</li>
 							<li class="main-menu-list__item mm-dropdowm">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-fixtures"></span> Светильники</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/fixtures.svg" alt="" class="icon">
+									Светильники
+								</a>
 								<ul class="main-menu-dropdown">
 									
 									<li><a href="#">Потолочные светильники</a></li>
@@ -193,7 +240,11 @@
 								</ul>
 							</li>
 							<li class="main-menu-list__item mm-dropdowm">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-desk-lamp"></span> Настольные лампы</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/desk-lamp.svg" alt="" class="icon">
+									Настольные лампы
+								</a>
 								<ul class="main-menu-dropdown">
 									
 									<li><a href="#">Потолочные светильники</a></li>
@@ -209,40 +260,88 @@
 								</ul>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-spots"></span> Споты</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/spots.svg" alt="" class="icon">
+									Споты
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-floor-lamps"></span> Торшеры</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/floor-lamps.svg" alt="" class="icon">
+									Торшеры
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-street-lighting"></span> Уличное освещение</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/street-lighting.svg" alt="" class="icon">
+									Уличное освещение
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-track-systems"></span> Трековые системы</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/track-systems.svg" alt="" class="icon">
+									Трековые системы
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-office-lighting"></span> Офисное освещение</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/office-lighting.svg" alt="" class="icon">
+									Офисное освещение
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-light-bulbs"></span> Лампочки</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/light-bulbs.svg" alt="" class="icon">
+									Лампочки
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-led-lights"></span> Светодиодная подсветка</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/led-lights.svg" alt="" class="icon">
+									Светодиодная подсветка
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-accessories"></span> Комплектующие</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/accessories.svg" alt="" class="icon">
+									Комплектующие
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-sockets"></span> Выключатели и розетки</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/sockets.svg" alt="" class="icon">
+									Выключатели и розетки
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-fireplaces"></span> Камины</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/fireplaces.svg" alt="" class="icon">
+									Камины
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-electrician"></span> Электрика</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/electrician.svg" alt="" class="icon">
+									Электрика
+								</a>
 							</li>
 							<li class="main-menu-list__item">
-								<a href="#" class="main-menu-list__link"><span class="icon icon-plus-circle"></span> Другое</a>
+								<a href="#" class="main-menu-list__link">
+									
+									<img src="img/icons/plus-circle.svg" alt="" class="icon">
+									Другое
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -257,47 +356,8 @@
 						</ul>
 					</div>
 					<div class="col-lg-4 col-md-3 d-flex justify-content-end hidden-md">
-						<div class="user-nav">
-							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-zoom"></span></a></div>
-							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
-							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
-							<div class="user-nav__item dropdown-container">
-								<a href="#" class="user-nav__link dropdown-button"><span class="icon icon-login"></span></a>
-							<!-- 	<div class="dropdown-block ">
-									<div class="dropdown-block__title">Войти в аккаунт</div>
-									<form action="#">
-										<div class="form-field">
-											<input type="text" class="form-input" placeholder="Логин">
-										</div>
-										<div class="form-field">
-											<input type="password" class="form-input" placeholder="Пароль">
-										</div>
-										<div class="form-button form-field">
-											<input type="submit" class="btn btn--block btn--warning" value="Войти">
-										</div>
-										<div class="form-link text-center">
-											<a href="#" class="link">Забыли пароль?</a>
-										</div>
-										<div class="form-button">
-											<a href="#" class="btn btn--block btn--border btn--sm">Регистрация</a>
-										</div>
-									</form>
-								</div> -->
-								<div class="dropdown-block ">
-									<div class="dropdown-block__title">Мой аккаунт</div>
-									<ul class="ds-user-nav">
-										<li><a href="#">История заказов</a></li>
-										<li><a href="#">Настройки аккаунта</a></li>
-									</ul>
-									<div class="dropdown-block__footer">
-										<a href="#" class="ds-link link">Выход</a>
-									</div>
-								</div>
-	
-							</div>
-							<div class="user-nav__item"><a href="#" class="user-nav__link"><span class="icon icon-cart"><span class="path1"></span><span class="path2"></span></span><span class="user-nav__text">(28)</span></a></div>
-						</div>
-						<ul class="hb-nav hb-nav-hidden">
+						
+						<ul class="hb-nav ">
 							<li class="hb-nav__item"><a href="#" class="hb-nav__link"><span class="icon icon-comment"></span> Блог</a></li>
 						</ul>
 					</div>
@@ -313,8 +373,8 @@
 			</div>
 			<div class="mobile-menu__icons">
 				<div class="user-nav">
-					<div class="user-nav__item "><a href="#" class="user-nav__link"><span class="icon icon-favorites"></span></a></div>
-					<div class="user-nav__item "><a href="#" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
+					<div class="user-nav__item "><a href="#" title="Избранное" class="user-nav__link"><span class="icon-favorites"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a></div>
+					<div class="user-nav__item "><a href="#" title="Сравнение товаров" class="user-nav__link"><span class="icon icon-compare"></span></a></div>
 				</div>
 			</div>
 		</div>
@@ -590,7 +650,23 @@
 			</div>
 		</div>
 	</div>
-	
+	<div class="popup popup-consultation ">
+		<div class="popup-container">
+			<div class="popup-content">
+				<div class="popup__close"><span class="icon icon-close"></span></div>
+				<div class="popup__head">
+					<h2 class="popup__title">Получить консультацию</h2>
+					<p>Оставьте ваш номер телефона и мы перезвоним в ближайшее время</p>
+				</div>
+				<form action="#">
+					<div class="form-field">
+						<input type="tel" class="form-input form-input--block tel" placeholder="Ваш номер телефона">
+					</div>
+					<input type="submit" class="btn btn--warning btn--block" value="Оставить заявку">
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class="popup popup-default ">
 		<div class="popup-container">
 			<div class="popup-content">
